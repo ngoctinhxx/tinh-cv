@@ -1,0 +1,3339 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phạm Ngọc Tính — IT Lecturer | Software Developer | AI & LLM Researcher</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Academic Portfolio & CV của Phạm Ngọc Tính — Giảng viên Khoa Công nghệ thông tin Đại học Đông Á, Kỹ sư phần mềm và Nhà nghiên cứu ứng dụng Trí tuệ nhân tạo (LLM).">
+  <meta name="keywords" content="Phạm Ngọc Tính, IT Lecturer, Software Developer, AI Researcher, Large Language Models, LLM Chatbot, Đại học Đông Á, Da Nang">
+  <meta name="author" content="Phạm Ngọc Tính">
+  <meta property="og:title" content="Phạm Ngọc Tính — IT Lecturer | Software Developer | AI Researcher">
+  <meta property="og:description" content="Connecting Education, Software Engineering & Artificial Intelligence. Academic CV & Professional Portfolio.">
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="images/avatar.jpg">
+  <meta property="og:locale" content="vi_VN">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Phạm Ngọc Tính",
+    "jobTitle": "IT Lecturer",
+    "worksFor": {
+      "@type": "EducationalOrganization",
+      "name": "Trường Đại học Đông Á",
+      "department": "Khoa Công nghệ thông tin"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Trường Đại học Đông Á"
+      }
+    ],
+    "knowsAbout": [
+      "Software Engineering",
+      "Mobile App Development",
+      "Artificial Intelligence",
+      "Large Language Models",
+      "Conversational AI",
+      "Flutter",
+      "ReactJS"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Đà Nẵng",
+      "addressCountry": "Việt Nam"
+    },
+    "email": "mailto:ngoctinhxx@gmail.com",
+    "telephone": "+84326693102"
+  }
+  </script>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       CSS DESIGN TOKENS & SYSTEM VARIABLES
+       ========================================================================== */
+    :root {
+      /* Dark Theme (Default) - Deep Navy Academic Luxury */
+      --bg-main: #090D16;
+      --bg-secondary: #111827;
+      --bg-card: #172033;
+      --bg-card-subtle: rgba(23, 32, 51, 0.7);
+      --bg-glass: rgba(17, 24, 39, 0.82);
+      
+      --text-primary: #F8FAFC;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      
+      --accent-blue: #60A5FA;
+      --accent-blue-rgb: 96, 165, 250;
+      --accent-cyan: #22D3EE;
+      --accent-gold: #D4B483;
+      --accent-gold-rgb: 212, 180, 131;
+      
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(96, 165, 250, 0.35);
+      --border-gold: rgba(212, 180, 131, 0.3);
+      
+      --badge-bg: rgba(96, 165, 250, 0.1);
+      --badge-text: #93C5FD;
+      --badge-border: rgba(96, 165, 250, 0.2);
+
+      --gold-badge-bg: rgba(212, 180, 131, 0.12);
+      --gold-badge-text: #E5D0B1;
+      --gold-badge-border: rgba(212, 180, 131, 0.28);
+      
+      --glow-blue: rgba(96, 165, 250, 0.15);
+      --glow-gold: rgba(212, 180, 131, 0.15);
+      --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-heading: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
+      --font-accent: 'Cormorant Garamond', serif;
+      --font-mono: 'Space Grotesk', monospace;
+      
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --radius-full: 9999px;
+      
+      --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-fast: all 0.15s ease;
+      --nav-height: 76px;
+    }
+
+    [data-theme="light"] {
+      /* Light Theme - Minimalist Academic Editorial */
+      --bg-main: #F8FAFC;
+      --bg-secondary: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-card-subtle: rgba(255, 255, 255, 0.85);
+      --bg-glass: rgba(255, 255, 255, 0.88);
+      
+      --text-primary: #0F172A;
+      --text-secondary: #475569;
+      --text-muted: #64748B;
+      
+      --accent-blue: #2563EB;
+      --accent-blue-rgb: 37, 99, 235;
+      --accent-cyan: #0891B2;
+      --accent-gold: #A17A42;
+      --accent-gold-rgb: 161, 122, 66;
+      
+      --border-color: #E2E8F0;
+      --border-hover: rgba(37, 99, 235, 0.35);
+      --border-gold: rgba(161, 122, 66, 0.35);
+      
+      --badge-bg: rgba(37, 99, 235, 0.08);
+      --badge-text: #1D4ED8;
+      --badge-border: rgba(37, 99, 235, 0.2);
+
+      --gold-badge-bg: rgba(161, 122, 66, 0.09);
+      --gold-badge-text: #855C24;
+      --gold-badge-border: rgba(161, 122, 66, 0.25);
+      
+      --glow-blue: rgba(37, 99, 235, 0.08);
+      --glow-gold: rgba(161, 122, 66, 0.08);
+      --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      line-height: 1.65;
+      overflow-x: hidden;
+      transition: background-color 0.4s ease, color 0.4s ease;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Background Ambient Canvas Glows */
+    .ambient-glow {
+      position: fixed;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(120px);
+      opacity: 0.35;
+      transition: opacity 0.5s ease;
+    }
+    .glow-1 {
+      top: -150px;
+      right: -100px;
+      background: radial-gradient(circle, var(--accent-blue) 0%, transparent 70%);
+    }
+    .glow-2 {
+      top: 40%;
+      left: -200px;
+      background: radial-gradient(circle, var(--accent-gold) 0%, transparent 70%);
+      opacity: 0.18;
+    }
+    .glow-3 {
+      bottom: 5%;
+      right: 5%;
+      background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
+      opacity: 0.15;
+    }
+
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      color: var(--text-primary);
+      line-height: 1.25;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    /* Scroll Progress Bar */
+    #scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-gold), var(--accent-blue), var(--accent-cyan));
+      width: 0%;
+      z-index: 1001;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 28px;
+      padding-right: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-spacing {
+      padding-top: clamp(80px, 10vw, 130px);
+      padding-bottom: clamp(80px, 10vw, 130px);
+    }
+
+    /* Section Header */
+    .section-header {
+      margin-bottom: clamp(40px, 6vw, 64px);
+    }
+    .section-header.text-center {
+      text-align: center;
+      max-width: 780px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent-gold);
+      margin-bottom: 14px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 24px;
+      height: 2px;
+      background-color: var(--accent-gold);
+      display: inline-block;
+    }
+    .section-title {
+      font-size: clamp(2rem, 3.5vw, 2.75rem);
+      margin-bottom: 16px;
+    }
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 640px;
+    }
+    .text-center .section-subtitle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Standard Badge / Chip */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 500;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      border: 1px solid var(--badge-border);
+      transition: var(--transition-fast);
+      white-space: nowrap;
+    }
+    .badge-gold {
+      background-color: var(--gold-badge-bg);
+      color: var(--gold-badge-text);
+      border-color: var(--gold-badge-border);
+    }
+
+    /* Premium Button Styles */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 13px 26px;
+      border-radius: var(--radius-full);
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-blue) 0%, #3B82F6 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 18px rgba(var(--accent-blue-rgb), 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(var(--accent-blue-rgb), 0.5);
+    }
+    .btn-secondary {
+      background-color: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+    .btn-secondary:hover {
+      background-color: var(--bg-card-subtle);
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+      color: var(--accent-blue);
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--accent-gold) 0%, #C49F6B 100%);
+      color: #0F172A;
+      font-weight: 700;
+      box-shadow: 0 4px 18px rgba(var(--accent-gold-rgb), 0.35);
+    }
+    .btn-gold:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(var(--accent-gold-rgb), 0.55);
+    }
+    .btn-sm {
+      padding: 8px 18px;
+      font-size: 0.85rem;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: var(--nav-height);
+      background-color: var(--bg-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 1000;
+      transition: var(--transition-smooth);
+    }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+    
+    /* Logo */
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .nav-logo-monogram {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.35rem;
+      letter-spacing: -0.04em;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .nav-logo-monogram .dot {
+      color: var(--accent-gold);
+    }
+    .nav-title-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border-left: 1px solid var(--border-color);
+      padding-left: 10px;
+      line-height: 1.2;
+      display: none;
+    }
+    @media (min-width: 1100px) {
+      .nav-title-sub { display: block; }
+    }
+
+    /* Desktop Navigation Links */
+    .nav-menu {
+      display: none;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+    @media (min-width: 960px) {
+      .nav-menu { display: flex; }
+    }
+    .nav-link {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      position: relative;
+      padding: 6px 0;
+      transition: color 0.2s ease;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--accent-blue);
+      transition: width 0.3s ease;
+      border-radius: 2px;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--text-primary);
+    }
+    .nav-link.active::after {
+      width: 100%;
+      background-color: var(--accent-gold);
+    }
+
+    /* Header Actions: Language, Theme, CV Button, Hamburger */
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* Toggle Switches */
+    .control-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      transition: var(--transition-fast);
+    }
+    .control-btn:hover {
+      color: var(--text-primary);
+      border-color: var(--border-hover);
+      background-color: var(--bg-card-subtle);
+      transform: scale(1.05);
+    }
+    .lang-btn {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0 12px;
+      width: auto;
+      height: 38px;
+    }
+    .theme-icon-sun { display: none; }
+    .theme-icon-moon { display: block; }
+    [data-theme="light"] .theme-icon-sun { display: block; }
+    [data-theme="light"] .theme-icon-moon { display: none; }
+
+    .nav-cv-btn {
+      display: none;
+    }
+    @media (min-width: 680px) {
+      .nav-cv-btn { display: inline-flex; }
+    }
+
+    /* Hamburger Button (Mobile) */
+    .mobile-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-md);
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 10px;
+    }
+    @media (min-width: 960px) {
+      .mobile-toggle { display: none; }
+    }
+    .hamburger-bar {
+      width: 100%;
+      height: 2px;
+      background-color: var(--text-primary);
+      transition: var(--transition-fast);
+      border-radius: 2px;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      position: fixed;
+      top: var(--nav-height);
+      left: 0;
+      width: 100%;
+      height: calc(100vh - var(--nav-height));
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.35s ease, opacity 0.3s ease;
+      z-index: 999;
+      overflow-y: auto;
+    }
+    .mobile-drawer.open {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .mobile-nav-link {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .mobile-nav-link:hover {
+      color: var(--accent-blue);
+    }
+    .mobile-drawer-footer {
+      margin-top: auto;
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* ==========================================================================
+       SECTION 01: HERO SECTION
+       ========================================================================== */
+    .hero-section {
+      padding-top: calc(var(--nav-height) + 50px);
+      padding-bottom: clamp(60px, 8vw, 100px);
+      min-height: calc(100vh - var(--nav-height));
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 60px;
+      }
+    }
+
+    .hero-eyebrow-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #10B981;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #10B981;
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.6; }
+    }
+
+    .hero-name {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+    }
+    .hero-title {
+      font-size: clamp(1.15rem, 2vw, 1.45rem);
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin-bottom: 14px;
+      font-family: var(--font-heading);
+    }
+    .hero-tagline {
+      font-family: var(--font-accent);
+      font-style: italic;
+      font-size: clamp(1.2rem, 2vw, 1.4rem);
+      color: var(--accent-gold);
+      margin-bottom: 24px;
+      line-height: 1.4;
+    }
+    .hero-bio {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 34px;
+      max-width: 600px;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 40px;
+    }
+
+    /* Hero Micro-labels / Highlights */
+    .hero-micro-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 16px;
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+    }
+    .hero-micro-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-micro-label {
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .hero-micro-value {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* Hero Right: Luxury Portrait Frame */
+    .hero-visual-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .portrait-card {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, rgba(23, 32, 51, 0.9) 0%, rgba(17, 24, 39, 0.95) 100%);
+      padding: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.6), 0 0 40px -10px var(--glow-blue);
+      backdrop-filter: blur(10px);
+      transition: var(--transition-smooth);
+    }
+    [data-theme="light"] .portrait-card {
+      background: linear-gradient(145deg, #FFFFFF 0%, #F1F5F9 100%);
+      box-shadow: 0 20px 50px -15px rgba(15, 23, 42, 0.12);
+    }
+    .portrait-inner {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: #0B1120;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-color);
+    }
+    .portrait-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .portrait-card:hover .portrait-img {
+      transform: scale(1.04);
+    }
+
+    /* Monogram Fallback */
+    .portrait-monogram {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, #1E293B 0%, #0F172A 100%);
+      color: var(--accent-gold);
+    }
+    .portrait-monogram span {
+      font-family: var(--font-accent);
+      font-size: 5rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+    }
+
+    /* Floating Academic Badges */
+    .floating-badge {
+      position: absolute;
+      background: var(--bg-glass);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: var(--card-shadow);
+      z-index: 2;
+      animation: float-slow 4s ease-in-out infinite alternate;
+    }
+    .floating-badge-1 {
+      top: -16px;
+      left: -16px;
+      border-left: 3px solid var(--accent-gold);
+    }
+    .floating-badge-2 {
+      bottom: -16px;
+      right: -16px;
+      border-right: 3px solid var(--accent-blue);
+      animation-delay: -2s;
+    }
+    @keyframes float-slow {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-8px); }
+    }
+    .float-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--badge-bg);
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+    .float-icon.gold {
+      background: var(--gold-badge-bg);
+      color: var(--accent-gold);
+    }
+    .float-text-top {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-family: var(--font-mono);
+      line-height: 1.1;
+    }
+    .float-text-bottom {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       SECTION 02: ABOUT ME & COMPETENCY PILLARS
+       ========================================================================== */
+    .about-section {
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+    .about-lead-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: clamp(28px, 5vw, 44px);
+      margin-bottom: 48px;
+      box-shadow: var(--card-shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    .about-lead-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, var(--accent-gold), var(--accent-blue));
+    }
+    .about-prose {
+      font-size: 1.12rem;
+      line-height: 1.85;
+      color: var(--text-secondary);
+    }
+    .about-prose p + p {
+      margin-top: 16px;
+    }
+    .about-prose strong {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    /* Three Pillars Grid */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    @media (min-width: 768px) {
+      .pillars-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .pillar-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      transition: var(--transition-smooth);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .pillar-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-hover);
+      box-shadow: 0 15px 35px -10px var(--glow-blue);
+    }
+    .pillar-icon-box {
+      width: 54px;
+      height: 54px;
+      border-radius: var(--radius-md);
+      background-color: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: var(--transition-smooth);
+    }
+    .pillar-card:hover .pillar-icon-box {
+      background-color: var(--accent-blue);
+      color: #FFFFFF;
+      transform: rotate(5deg) scale(1.05);
+    }
+    .pillar-card.gold-pillar .pillar-icon-box {
+      background-color: var(--gold-badge-bg);
+      border-color: var(--gold-badge-border);
+      color: var(--accent-gold);
+    }
+    .pillar-card.gold-pillar:hover .pillar-icon-box {
+      background-color: var(--accent-gold);
+      color: #0F172A;
+    }
+    .pillar-title {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+    .pillar-desc {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================================================
+       SECTION 03: PROFESSIONAL EXPERIENCE
+       ========================================================================== */
+    .timeline-container {
+      position: relative;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
+    @media (min-width: 768px) {
+      .timeline-container {
+        padding-left: 40px;
+      }
+    }
+    .timeline-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 7px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--accent-gold) 0%, var(--accent-blue) 40%, rgba(255,255,255,0.05) 100%);
+    }
+    @media (min-width: 768px) {
+      .timeline-line { left: 19px; }
+    }
+    [data-theme="light"] .timeline-line {
+      background: linear-gradient(180deg, var(--accent-gold) 0%, var(--accent-blue) 40%, #E2E8F0 100%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 48px;
+    }
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+    .timeline-node {
+      position: absolute;
+      top: 24px;
+      left: -20px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--bg-main);
+      border: 3px solid var(--accent-blue);
+      z-index: 2;
+      transition: var(--transition-fast);
+    }
+    @media (min-width: 768px) {
+      .timeline-node { left: -29px; width: 20px; height: 20px; }
+    }
+    .timeline-item.featured .timeline-node {
+      border-color: var(--accent-gold);
+      background-color: var(--accent-gold);
+      box-shadow: 0 0 14px var(--accent-gold);
+    }
+
+    .experience-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: clamp(24px, 4vw, 32px);
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+    .experience-card:hover {
+      border-color: var(--border-hover);
+      transform: translateX(4px);
+      box-shadow: var(--card-shadow);
+    }
+    .timeline-item.featured .experience-card {
+      border-color: var(--border-gold);
+      background: linear-gradient(145deg, var(--bg-card) 0%, var(--bg-card-subtle) 100%);
+      box-shadow: 0 10px 30px -10px var(--glow-gold);
+    }
+    .exp-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .exp-role-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .exp-company {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .timeline-item.featured .exp-company {
+      color: var(--accent-gold);
+    }
+    .exp-period {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      background: var(--bg-secondary);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--border-color);
+      white-space: nowrap;
+    }
+    .exp-desc {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-top: 14px;
+      margin-bottom: 20px;
+    }
+    .exp-tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ==========================================================================
+       SECTION 04: ACADEMIC JOURNEY
+       ========================================================================== */
+    .academic-section {
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .academic-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    @media (min-width: 900px) {
+      .academic-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+    }
+
+    .academic-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: clamp(28px, 4vw, 38px);
+      position: relative;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .academic-card:hover {
+      border-color: var(--border-hover);
+      box-shadow: var(--card-shadow);
+      transform: translateY(-4px);
+    }
+    .academic-card.master-card {
+      border-color: var(--border-gold);
+      background: linear-gradient(150deg, var(--bg-card) 0%, rgba(212, 180, 131, 0.04) 100%);
+      box-shadow: 0 12px 35px -10px var(--glow-gold);
+    }
+    .academic-badge-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .academic-degree {
+      font-size: 1.45rem;
+      margin-bottom: 6px;
+    }
+    .academic-institution {
+      font-size: 1.05rem;
+      color: var(--accent-blue);
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .master-card .academic-institution {
+      color: var(--accent-gold);
+    }
+    .thesis-box {
+      margin-top: 18px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      position: relative;
+    }
+    [data-theme="light"] .thesis-box {
+      background-color: #F8FAFC;
+    }
+    .thesis-label {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .thesis-title-vn {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.45;
+      margin-bottom: 8px;
+    }
+    .thesis-title-en {
+      font-size: 0.95rem;
+      font-style: italic;
+      color: var(--text-secondary);
+      line-height: 1.45;
+      margin-bottom: 14px;
+      font-family: var(--font-accent);
+    }
+    .thesis-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    /* GPA Badge Box */
+    .gpa-card-box {
+      margin-top: 24px;
+      padding: 18px;
+      background: linear-gradient(135deg, rgba(96, 165, 250, 0.08) 0%, rgba(34, 211, 238, 0.05) 100%);
+      border: 1px solid var(--badge-border);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .gpa-info-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .gpa-score {
+      font-family: var(--font-heading);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--accent-blue);
+      line-height: 1;
+    }
+    .gpa-scale {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       SECTION 05: TECHNICAL EXPERTISE
+       ========================================================================== */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    @media (min-width: 640px) {
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .skill-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+    }
+    .skill-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--card-shadow);
+    }
+    .skill-card.research-card {
+      border-color: var(--border-gold);
+      background: linear-gradient(150deg, var(--bg-card) 0%, rgba(212, 180, 131, 0.05) 100%);
+    }
+    .skill-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .skill-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background-color: var(--badge-bg);
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .skill-card.research-card .skill-icon {
+      background-color: var(--gold-badge-bg);
+      color: var(--accent-gold);
+    }
+    .skill-group-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-chip {
+      padding: 6px 14px;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      transition: var(--transition-fast);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .skill-chip:hover {
+      border-color: var(--accent-blue);
+      color: var(--accent-blue);
+      background-color: var(--badge-bg);
+      transform: translateY(-2px);
+    }
+    .skill-card.research-card .skill-chip:hover {
+      border-color: var(--accent-gold);
+      color: var(--accent-gold);
+      background-color: var(--gold-badge-bg);
+    }
+    .skill-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    /* ==========================================================================
+       SECTION 06: SELECTED WORKS (PROJECTS)
+       ========================================================================== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    @media (min-width: 800px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .project-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition-smooth);
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--border-hover);
+      box-shadow: 0 16px 40px -15px var(--glow-blue);
+    }
+    .project-card::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      background: radial-gradient(circle, var(--accent-blue) 0%, transparent 70%);
+      opacity: 0.08;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .project-card:hover::after {
+      opacity: 0.25;
+    }
+    .project-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+    }
+    .project-index {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+      letter-spacing: 0.05em;
+    }
+    .project-period {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background-color: var(--bg-secondary);
+      padding: 3px 9px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+    .project-title {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+    .project-meta-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .project-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .project-desc {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--text-secondary);
+      margin-bottom: 22px;
+    }
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* ==========================================================================
+       SECTION 07: FEATURED AI RESEARCH SPOTLIGHT
+       ========================================================================== */
+    .research-section {
+      background-color: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      position: relative;
+    }
+    .research-spotlight-card {
+      background: linear-gradient(145deg, var(--bg-card) 0%, rgba(17, 24, 39, 0.9) 100%);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-xl);
+      padding: clamp(32px, 6vw, 60px);
+      box-shadow: 0 20px 60px -15px var(--glow-gold);
+      position: relative;
+      overflow: hidden;
+    }
+    [data-theme="light"] .research-spotlight-card {
+      background: linear-gradient(145deg, #FFFFFF 0%, #F8FAFC 100%);
+      box-shadow: 0 20px 60px -15px rgba(161, 122, 66, 0.12);
+    }
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (min-width: 960px) {
+      .research-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+    }
+    .research-label-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .research-headline {
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .thesis-featured-title {
+      font-size: clamp(1.15rem, 2vw, 1.35rem);
+      font-weight: 700;
+      color: var(--accent-gold);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .thesis-featured-sub {
+      font-family: var(--font-accent);
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      margin-bottom: 24px;
+    }
+    .research-text {
+      font-size: 1.02rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 26px;
+    }
+
+    /* Research SVG Visualization Panel */
+    .research-visual-panel {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      background: radial-gradient(circle at center, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.95) 100%);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+    [data-theme="light"] .research-visual-panel {
+      background: radial-gradient(circle at center, #F1F5F9 0%, #E2E8F0 100%);
+    }
+    .network-svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+    .svg-node {
+      animation: pulse-node 3s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+    @keyframes pulse-node {
+      0% { transform: scale(1); filter: drop-shadow(0 0 2px var(--accent-blue)); }
+      100% { transform: scale(1.08); filter: drop-shadow(0 0 8px var(--accent-cyan)); }
+    }
+    .svg-line {
+      stroke-dasharray: 4;
+      animation: dash-flow 20s linear infinite;
+    }
+    @keyframes dash-flow {
+      to { stroke-dashoffset: -100; }
+    }
+
+    /* ==========================================================================
+       SECTION 08: CERTIFICATIONS & ACTIVITIES
+       ========================================================================== */
+    .cert-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+    @media (min-width: 768px) {
+      .cert-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+    }
+    .cert-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+    }
+    .cert-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-4px);
+      box-shadow: var(--card-shadow);
+    }
+    .cert-icon-wrapper {
+      width: 50px;
+      height: 50px;
+      border-radius: var(--radius-md);
+      background-color: var(--badge-bg);
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .cert-title {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+    .cert-issuer {
+      font-size: 1.05rem;
+      color: var(--accent-gold);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .cert-desc {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: var(--text-secondary);
+    }
+
+    .interests-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .interest-pill {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    /* ==========================================================================
+       SECTION 09: CONTACT & FOOTER
+       ========================================================================== */
+    .contact-card {
+      background: linear-gradient(145deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: clamp(32px, 6vw, 60px);
+      box-shadow: var(--card-shadow);
+      margin-bottom: 60px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media (min-width: 900px) {
+      .contact-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+    }
+    .contact-heading {
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      margin-bottom: 18px;
+    }
+    .contact-intro {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+    }
+
+    /* Contact Links / Buttons */
+    .contact-methods {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      transition: var(--transition-fast);
+    }
+    .contact-item:hover {
+      border-color: var(--border-hover);
+      background-color: var(--bg-card-subtle);
+    }
+    .contact-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--badge-bg);
+      color: var(--accent-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-label {
+      font-size: 0.78rem;
+      font-family: var(--font-mono);
+      text-transform: uppercase;
+      color: var(--text-muted);
+      line-height: 1.1;
+    }
+    .contact-value {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    /* Copy Button */
+    .copy-btn {
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition-fast);
+    }
+    .copy-btn:hover {
+      color: var(--accent-blue);
+      border-color: var(--accent-blue);
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 36px;
+      padding-bottom: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+    @media (min-width: 768px) {
+      .site-footer {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+    .footer-copy {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      transition: var(--transition-fast);
+    }
+    .back-to-top:hover {
+      color: var(--accent-gold);
+    }
+
+    /* Toast Notification */
+    #toast-notification {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--border-hover);
+      padding: 14px 22px;
+      border-radius: var(--radius-md);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      z-index: 2000;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+    }
+    #toast-notification.show {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    /* ==========================================================================
+       ANIMATIONS & REVEAL EFFECTS
+       ========================================================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+
+    /* ==========================================================================
+       PRINT CV STYLES (@media print)
+       ========================================================================== */
+    @media print {
+      body {
+        background-color: #FFFFFF !important;
+        color: #0F172A !important;
+        font-size: 10pt !important;
+        line-height: 1.4 !important;
+      }
+      .ambient-glow,
+      #scroll-progress,
+      .navbar,
+      .mobile-drawer,
+      .hero-cta-group,
+      .control-btn,
+      .copy-btn,
+      .back-to-top,
+      #toast-notification,
+      .research-visual-panel,
+      .floating-badge {
+        display: none !important;
+      }
+      .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+      .section-spacing {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+      }
+      .hero-section {
+        padding-top: 0 !important;
+        min-height: auto !important;
+      }
+      .hero-grid {
+        grid-template-columns: 1fr 140px !important;
+        gap: 20px !important;
+      }
+      .portrait-card {
+        max-width: 130px !important;
+        box-shadow: none !important;
+        border: 1px solid #CBD5E1 !important;
+        padding: 4px !important;
+      }
+      .portrait-inner {
+        aspect-ratio: 1/1 !important;
+      }
+      .card, .pillar-card, .experience-card, .academic-card, .skill-card, .project-card, .research-spotlight-card, .cert-card, .contact-card {
+        background: #FFFFFF !important;
+        border: 1px solid #E2E8F0 !important;
+        box-shadow: none !important;
+        page-break-inside: avoid !important;
+        color: #0F172A !important;
+        padding: 14px !important;
+        margin-bottom: 12px !important;
+      }
+      p, .exp-desc, .about-prose, .project-desc, .research-text {
+        color: #334155 !important;
+        font-size: 9.5pt !important;
+      }
+      h1, h2, h3, h4 {
+        color: #0F172A !important;
+      }
+      .badge, .skill-chip {
+        border: 1px solid #CBD5E1 !important;
+        background: #F8FAFC !important;
+        color: #1E293B !important;
+        font-size: 8pt !important;
+      }
+      .timeline-line {
+        background: #CBD5E1 !important;
+      }
+      .timeline-node {
+        background: #0F172A !important;
+        border-color: #0F172A !important;
+      }
+      .site-footer {
+        border-top: 1px solid #E2E8F0 !important;
+        padding: 10px 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Light Backdrops -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="nav-brand" aria-label="Phạm Ngọc Tính - Portfolio Homepage">
+        <span class="nav-logo-monogram">PNT<span class="dot">.</span></span>
+        <span class="nav-title-sub" data-i18n="nav_sub">IT Lecturer & Researcher</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-link active" data-i18n="nav_home">Trang chủ</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">Về tôi</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav_experience">Kinh nghiệm</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav_education">Học vấn</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav_skills">Kỹ năng</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav_projects">Dự án</a></li>
+          <li><a href="#research" class="nav-link" data-i18n="nav_research">Nghiên cứu</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Utilities -->
+      <div class="nav-actions">
+        <!-- Language Switcher VI / EN -->
+        <button id="lang-toggle-btn" class="control-btn lang-btn" title="Chuyển đổi ngôn ngữ / Switch Language" aria-label="Switch Language">
+          <span id="lang-label">EN</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button id="theme-toggle-btn" class="control-btn" title="Chuyển đổi giao diện Sáng/Tối" aria-label="Toggle Dark and Light theme">
+          <!-- Sun Icon (shown in light mode) -->
+          <svg class="theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in dark mode) -->
+          <svg class="theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Download CV / Print Button -->
+        <button onclick="handlePrintCV()" class="btn btn-sm btn-primary nav-cv-btn" title="In hoặc lưu hồ sơ PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9V2h12v7"></path>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span data-i18n="btn_download_cv">Tải CV / In PDF</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Open navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer" class="mobile-drawer">
+    <a href="#hero" class="mobile-nav-link" data-i18n="nav_home">Trang chủ <span>→</span></a>
+    <a href="#about" class="mobile-nav-link" data-i18n="nav_about">Về tôi <span>→</span></a>
+    <a href="#experience" class="mobile-nav-link" data-i18n="nav_experience">Kinh nghiệm <span>→</span></a>
+    <a href="#education" class="mobile-nav-link" data-i18n="nav_education">Học vấn <span>→</span></a>
+    <a href="#skills" class="mobile-nav-link" data-i18n="nav_skills">Kỹ năng <span>→</span></a>
+    <a href="#projects" class="mobile-nav-link" data-i18n="nav_projects">Dự án <span>→</span></a>
+    <a href="#research" class="mobile-nav-link" data-i18n="nav_research">Nghiên cứu <span>→</span></a>
+    <a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">Liên hệ <span>→</span></a>
+    
+    <div class="mobile-drawer-footer">
+      <button onclick="handlePrintCV()" class="btn btn-primary" style="width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M6 9V2h12v7"></path>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        <span data-i18n="btn_download_cv">Tải CV / In PDF</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 01: HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Biography & Positioning -->
+          <div class="hero-content reveal">
+            <div class="hero-eyebrow-wrapper">
+              <span class="status-dot"></span>
+              <span class="eyebrow" data-i18n="hero_eyebrow" style="margin-bottom:0;">Lecturer • Developer • AI Research</span>
+            </div>
+
+            <h1 class="hero-name">PHẠM NGỌC TÍNH</h1>
+            <p class="hero-title" data-i18n="hero_title">IT Lecturer | Software Developer | AI & LLM Researcher</p>
+            
+            <p class="hero-tagline" data-i18n="hero_tagline">"Connecting Education, Software Engineering & Artificial Intelligence."</p>
+            
+            <p class="hero-bio" data-i18n="hero_bio_short">
+              Giảng viên Khoa Công nghệ thông tin tại Trường Đại học Đông Á. Kết hợp nền tảng kỹ thuật phần mềm vững chắc, kinh nghiệm phát triển ứng dụng di động & web, cùng định hướng nghiên cứu ứng dụng Mô hình ngôn ngữ lớn (LLM) và Chatbot thông minh vào giáo dục đại học.
+            </p>
+
+            <!-- CTA Actions -->
+            <div class="hero-cta-group">
+              <a href="#about" class="btn btn-primary">
+                <span data-i18n="btn_explore_profile">Khám phá hồ sơ</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#research" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+                <span data-i18n="btn_view_research">Xem đề tài nghiên cứu</span>
+              </a>
+
+              <button onclick="handlePrintCV()" class="btn btn-secondary" title="In hoặc lưu file PDF">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span data-i18n="btn_download_cv_hero">Tải CV (PDF)</span>
+              </button>
+            </div>
+
+            <!-- Micro Metrics / Identity Labels -->
+            <div class="hero-micro-grid">
+              <div class="hero-micro-item">
+                <span class="hero-micro-label" data-i18n="hero_label_role">Vị trí hiện tại</span>
+                <span class="hero-micro-value" data-i18n="hero_val_role">Giảng viên CNTT (10/2023 – Nay)</span>
+              </div>
+              <div class="hero-micro-item">
+                <span class="hero-micro-label" data-i18n="hero_label_academic">Trình độ học vấn</span>
+                <span class="hero-micro-value" data-i18n="hero_val_academic">Thạc sĩ (Hoàn thành 2026)</span>
+              </div>
+              <div class="hero-micro-item">
+                <span class="hero-micro-label" data-i18n="hero_label_location">Địa điểm công tác</span>
+                <span class="hero-micro-value" data-i18n="hero_val_location">Đà Nẵng, Việt Nam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Luxury Portrait Frame -->
+          <div class="hero-visual-wrapper reveal">
+            <div class="portrait-card">
+              
+              <!-- Floating Badge 1 (Top Left) -->
+              <div class="floating-badge floating-badge-1">
+                <div class="float-icon gold">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="float-text-top" data-i18n="badge_academic_top">Faculty of IT</div>
+                  <div class="float-text-bottom" data-i18n="badge_academic_bottom">Đại học Đông Á</div>
+                </div>
+              </div>
+
+              <!-- Main Photo Frame -->
+              <div class="portrait-inner">
+                <img 
+                  src="images/avatar.jpg" 
+                  alt="Chân dung Phạm Ngọc Tính" 
+                  class="portrait-img"
+                  loading="eager"
+                  onerror="this.style.display='none'; document.getElementById('portrait-fallback').style.display='flex';"
+                >
+                <div id="portrait-fallback" class="portrait-monogram">
+                  <span>PNT</span>
+                </div>
+              </div>
+
+              <!-- Floating Badge 2 (Bottom Right) -->
+              <div class="floating-badge floating-badge-2">
+                <div class="float-icon">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                    <path d="M12 12L2.5 7.5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="float-text-top" data-i18n="badge_ai_top">Research Focus</div>
+                  <div class="float-text-bottom" data-i18n="badge_ai_bottom">LLM & Education AI</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 02: ABOUT ME & COMPETENCY PILLARS
+         ========================================================================== -->
+    <section class="section-spacing about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="about_eyebrow">Giới thiệu tổng quan</span>
+          <h2 class="section-title" data-i18n="about_title">Hồ Sơ Chuyên Môn</h2>
+          <p class="section-subtitle" data-i18n="about_subtitle">Sự hội tụ giữa chuẩn mực đào tạo học thuật, năng lực lập trình ứng dụng thực tiễn và tư duy nghiên cứu công nghệ mới.</p>
+        </div>
+
+        <!-- Editorial Bio Card -->
+        <div class="about-lead-card reveal">
+          <div class="about-prose">
+            <p data-i18n="about_para_1">
+              <strong>Phạm Ngọc Tính</strong> hiện đang công tác với vai trò là <strong>Giảng viên Khoa Công nghệ thông tin</strong> tại <strong>Trường Đại học Đông Á</strong> (từ tháng 10/2023 đến nay). Trên giảng đường, thầy tập trung truyền cảm hứng học tập và trang bị nền tảng công nghệ phần mềm thực tế, phương pháp tư duy lập trình vững chắc cho sinh viên.
+            </p>
+            <p data-i18n="about_para_2">
+              Xuất phát từ nền tảng đào tạo chuyên ngành <strong>Công nghệ phần mềm</strong> cùng kinh nghiệm thực tế trong phát triển ứng dụng di động (Flutter), giao diện web hiện đại (ReactJS) và quản trị cơ sở dữ liệu, thầy luôn chú trọng tính ứng dụng và chất lượng kiến trúc phần mềm trong giảng dạy.
+            </p>
+            <p data-i18n="about_para_3">
+              Thầy hoàn thành chương trình đào tạo Thạc sĩ năm 2026 với đề tài nghiên cứu trọng điểm: <em>"PHÁT TRIỂN CHATBOT HỖ TRỢ TƯ VẤN TUYỂN SINH DỰA TRÊN MÔ HÌNH NGÔN NGỮ LỚN"</em>. Hướng nghiên cứu hiện tại tập trung sâu vào ứng dụng Trí tuệ nhân tạo (AI), Mô hình ngôn ngữ lớn (LLM), Chatbot hội thoại thông minh và các giải pháp chuyển đổi số nâng cao trải nghiệm trong môi trường giáo dục đại học.
+            </p>
+          </div>
+        </div>
+
+        <!-- Three Pillars of Competence -->
+        <div class="pillars-grid">
+          
+          <!-- Pillar 1: Academic & Teaching -->
+          <div class="pillar-card gold-pillar reveal">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar_1_title">Đào Tạo & Giảng Dạy</h3>
+            <p class="pillar-desc" data-i18n="pillar_1_desc">
+              Giảng dạy tại Khoa Công nghệ thông tin Đại học Đông Á. Định hướng sinh viên tiếp cận chuẩn kỹ nghệ phần mềm, rèn luyện tư duy giải quyết vấn đề và thích ứng với làn sóng công nghệ mới.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Software Development -->
+          <div class="pillar-card reveal">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar_2_title">Phát Triển Phần Mềm</h3>
+            <p class="pillar-desc" data-i18n="pillar_2_desc">
+              Kinh nghiệm thực hành lập trình ứng dụng di động đa nền tảng với Flutter/Dart, thiết kế giao diện web với ReactJS, tối ưu luồng trạng thái (BLoC, Redux) và tích hợp hệ thống cơ sở dữ liệu.
+            </p>
+          </div>
+
+          <!-- Pillar 3: AI & LLM Research -->
+          <div class="pillar-card reveal">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="pillar-title" data-i18n="pillar_3_title">Nghiên Cứu AI & LLM</h3>
+            <p class="pillar-desc" data-i18n="pillar_3_desc">
+              Tập trung khai thác sức mạnh của Mô hình ngôn ngữ lớn (LLM), Conversational AI trong việc xây dựng hệ thống trợ lý ảo hỗ trợ tư vấn tuyển sinh và đổi mới phương thức tương tác giáo dục.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 03: PROFESSIONAL EXPERIENCE
+       ========================================================================== -->
+    <section class="section-spacing" id="experience">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="exp_eyebrow">Hành trình nghề nghiệp</span>
+          <h2 class="section-title" data-i18n="exp_title">Kinh Nghiệm Chuyên Môn</h2>
+          <p class="section-subtitle" data-i18n="exp_subtitle">Lộ trình tích lũy từ môi trường doanh nghiệp phần mềm đến vai trò Giảng viên đại học và nghiên cứu công nghệ.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+
+          <!-- Position 1: IT Lecturer @ Dong A University (Primary Career Highlight) -->
+          <div class="timeline-item featured reveal">
+            <div class="timeline-node"></div>
+            <div class="experience-card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role-title" data-i18n="exp_role_1">Giảng viên Công nghệ thông tin</h3>
+                  <div class="exp-company">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                    <span data-i18n="exp_comp_1">Trường Đại học Đông Á — Khoa Công nghệ thông tin</span>
+                  </div>
+                </div>
+                <span class="exp-period" data-i18n="exp_time_1">10/2023 – Hiện tại</span>
+              </div>
+              <p class="exp-desc" data-i18n="exp_desc_1">
+                Đảm nhiệm công tác đào tạo và giảng dạy trong lĩnh vực Công nghệ thông tin; ứng dụng nền tảng chuyên môn sâu về công nghệ phần mềm và quy trình phát triển ứng dụng vào bài giảng. Luôn quan tâm tìm tòi, thúc đẩy các phương pháp ứng dụng công nghệ hiện đại, trí tuệ nhân tạo (AI) và các mô hình ngôn ngữ lớn (LLM) vào môi trường học thuật.
+              </p>
+              <div class="exp-tech-tags">
+                <span class="badge badge-gold" data-i18n="exp_tag_1a">Giảng dạy CNTT</span>
+                <span class="badge" data-i18n="exp_tag_1b">Công nghệ phần mềm</span>
+                <span class="badge" data-i18n="exp_tag_1c">Ứng dụng AI trong Giáo dục</span>
+                <span class="badge" data-i18n="exp_tag_1d">Large Language Models</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Position 2: Mobile Developer Intern @ ALPHATECH Bình Định -->
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="experience-card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role-title" data-i18n="exp_role_2">Mobile Developer Intern</h3>
+                  <div class="exp-company">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>ALPHATECH Bình Định</span>
+                  </div>
+                </div>
+                <span class="exp-period">01/01/2023 – 13/03/2023</span>
+              </div>
+              <p class="exp-desc" data-i18n="exp_desc_2">
+                Tham gia thực tập trong lĩnh vực phát triển ứng dụng di động; tiếp cận quy trình phát triển phần mềm chuyên nghiệp với Flutter, tối ưu hóa giao diện người dùng và quản lý luồng trạng thái phức tạp với BLoC pattern.
+              </p>
+              <div class="exp-tech-tags">
+                <span class="badge">Flutter</span>
+                <span class="badge">Dart</span>
+                <span class="badge">BLoC Pattern</span>
+                <span class="badge">Mobile App Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Position 3: Frontend Developer Intern @ TMA Solutions Bình Định -->
+          <div class="timeline-item reveal">
+            <div class="timeline-node"></div>
+            <div class="experience-card">
+              <div class="exp-header">
+                <div>
+                  <h3 class="exp-role-title" data-i18n="exp_role_3">Frontend Developer Intern</h3>
+                  <div class="exp-company">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span>TMA Solutions Bình Định</span>
+                  </div>
+                </div>
+                <span class="exp-period">06/06/2022 – 28/08/2022</span>
+              </div>
+              <p class="exp-desc" data-i18n="exp_desc_3">
+                Thực tập chuyên môn trong mảng phát triển giao diện web; làm việc cùng công nghệ ReactJS, JavaScript hiện đại, xây dựng các thành phần giao diện người dùng có tính tương tác cao và chuẩn hóa CSS/HTML.
+              </p>
+              <div class="exp-tech-tags">
+                <span class="badge">ReactJS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">HTML5 / CSS3</span>
+                <span class="badge">Responsive UI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 04: ACADEMIC JOURNEY
+       ========================================================================== -->
+    <section class="section-spacing academic-section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="edu_eyebrow">Hành trình học thuật</span>
+          <h2 class="section-title" data-i18n="edu_title">Học Vấn & Luận Văn Thạc Sĩ</h2>
+          <p class="section-subtitle" data-i18n="edu_subtitle">Nền tảng đào tạo chính quy, từ xuất sắc Đại học Công nghệ phần mềm đến định hướng nghiên cứu chuyên sâu về AI.</p>
+        </div>
+
+        <div class="academic-grid">
+          
+          <!-- Master's Degree Card with Thesis Spotlight -->
+          <div class="academic-card master-card reveal">
+            <div class="academic-badge-row">
+              <span class="badge badge-gold" data-i18n="edu_master_level">Trình độ Thạc sĩ</span>
+              <span class="exp-period" data-i18n="edu_master_year">Hoàn thành năm 2026</span>
+            </div>
+
+            <h3 class="academic-degree" data-i18n="edu_master_degree">Chương Trình Thạc Sĩ</h3>
+            <p class="academic-institution" data-i18n="edu_master_sub">Đào tạo sau đại học & Nghiên cứu ứng dụng</p>
+
+            <div class="thesis-box">
+              <div class="thesis-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+                <span data-i18n="thesis_badge">Luận văn Thạc sĩ</span>
+              </div>
+              <h4 class="thesis-title-vn">"PHÁT TRIỂN CHATBOT HỖ TRỢ TƯ VẤN TUYỂN SINH DỰA TRÊN MÔ HÌNH NGÔN NGỮ LỚN"</h4>
+              <p class="thesis-title-en">"Development of an Admission Counseling Chatbot Based on Large Language Models"</p>
+              
+              <div class="thesis-keywords">
+                <span class="badge">Large Language Models (LLMs)</span>
+                <span class="badge">Conversational AI</span>
+                <span class="badge">Chatbot</span>
+                <span class="badge">Admission Counseling</span>
+                <span class="badge">Artificial Intelligence</span>
+                <span class="badge">Educational Technology</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bachelor's Degree Card with GPA Achievement -->
+          <div class="academic-card reveal">
+            <div class="academic-badge-row">
+              <span class="badge" data-i18n="edu_bachelor_level">Trình độ Đại học</span>
+              <span class="exp-period">2019 – 2023</span>
+            </div>
+
+            <h3 class="academic-degree" data-i18n="edu_bachelor_degree">Kỹ Sư Công Nghệ Phần Mềm</h3>
+            <p class="academic-institution">Trường Đại học Đông Á</p>
+            <p class="exp-desc" data-i18n="edu_bachelor_desc">
+              Tốt nghiệp chuyên ngành Công nghệ phần mềm với kết quả học tập xuất sắc. Được trang bị nền tảng kiến trúc phần mềm, cấu trúc dữ liệu và giải thuật, công nghệ cơ sở dữ liệu và quy trình kiểm thử phần mềm.
+            </p>
+
+            <!-- GPA Achievement Box -->
+            <div class="gpa-card-box">
+              <div>
+                <div class="gpa-info-title" data-i18n="gpa_label">Điểm Trung Bình Tốt Nghiệp</div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary);" data-i18n="gpa_sub">Academic Achievement</div>
+              </div>
+              <div class="gpa-score">
+                3.6 <span class="gpa-scale">/ 4.0</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 05: TECHNICAL EXPERTISE
+       ========================================================================== -->
+    <section class="section-spacing" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="skills_eyebrow">Năng lực cốt lõi</span>
+          <h2 class="section-title" data-i18n="skills_title">Kỹ Năng & Hướng Chuyên Môn</h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle">Hệ thống công nghệ phần mềm thực hành và các chủ đề nghiên cứu trọng tâm.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Group 1: Programming Languages -->
+          <div class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-group-title" data-i18n="skill_group_languages">Ngôn Ngữ Lập Trình</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip">Dart</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">Python</span>
+              <span class="skill-chip">HTML</span>
+              <span class="skill-chip">CSS</span>
+            </div>
+          </div>
+
+          <!-- Group 2: Frameworks & Platforms -->
+          <div class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-group-title" data-i18n="skill_group_frameworks">Framework & Nền Tảng</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip">Flutter</span>
+              <span class="skill-chip">ReactJS</span>
+              <span class="skill-chip">Redux</span>
+              <span class="skill-chip">BLoC Pattern</span>
+              <span class="skill-chip">Firebase</span>
+            </div>
+          </div>
+
+          <!-- Group 3: Databases -->
+          <div class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-group-title" data-i18n="skill_group_databases">Cơ Sở Dữ Liệu</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip">SQL Server</span>
+              <span class="skill-chip">MySQL</span>
+              <span class="skill-chip">MongoDB</span>
+              <span class="skill-chip">Firebase Realtime DB</span>
+            </div>
+          </div>
+
+          <!-- Group 4: Version Control & Collaboration -->
+          <div class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                  <line x1="6" y1="9" x2="6" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="skill-group-title" data-i18n="skill_group_vcs">Quản Lý Mã Nguồn</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip">Git</span>
+              <span class="skill-chip">GitLab</span>
+              <span class="skill-chip">Bitbucket</span>
+            </div>
+          </div>
+
+          <!-- Group 5: AI & Research Interests (Clearly marked as research directions) -->
+          <div class="skill-card research-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="skill-group-title" data-i18n="skill_group_ai">Định Hướng Nghiên Cứu AI</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-chip">Artificial Intelligence</span>
+              <span class="skill-chip">Large Language Models</span>
+              <span class="skill-chip">Conversational AI</span>
+              <span class="skill-chip">Chatbot Applications</span>
+              <span class="skill-chip">AI in Education</span>
+            </div>
+            <p class="skill-note" data-i18n="skill_ai_note">
+              * Đây là các lĩnh vực trọng tâm và đề tài nghiên cứu học thuật đang được theo đuổi.
+            </p>
+          </div>
+
+          <!-- Group 6: Professional Languages -->
+          <div class="skill-card reveal">
+            <div class="skill-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <h3 class="skill-group-title" data-i18n="skill_group_comm_lang">Ngoại Ngữ</h3>
+            </div>
+            <div class="skill-tags" style="flex-direction: column; gap: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600;" data-i18n="lang_vietnamese">Tiếng Việt</span>
+                <span class="badge" data-i18n="lang_native">Bản ngữ (Native)</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-weight: 600;" data-i18n="lang_english">Tiếng Anh</span>
+                <span class="badge badge-gold">Trình độ B1</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 06: SELECTED WORKS (PROJECTS)
+       ========================================================================== -->
+    <section class="section-spacing" id="projects" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="projects_eyebrow">Dự án kỹ thuật</span>
+          <h2 class="section-title" data-i18n="projects_title">Dự Án Phát Triển Phần Mềm</h2>
+          <p class="section-subtitle" data-i18n="projects_subtitle">Các sản phẩm phần mềm thực tế kết hợp giải pháp IoT, Mobile và Web Applications.</p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 01: Smart Home -->
+          <div class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-index">PROJECT 01</span>
+                <span class="project-period">2022 – 2023</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj_1_title">Smart Home</h3>
+              <div class="project-meta-row">
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span data-i18n="proj_role_mobile">Vai trò: Mobile Developer</span>
+                </span>
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <span data-i18n="proj_team_4">Nhóm: 4 thành viên</span>
+                </span>
+              </div>
+              <p class="project-desc" data-i18n="proj_1_desc">
+                Ứng dụng hỗ trợ người dùng điều khiển và giám sát các thiết bị trong gia đình thông minh từ xa, kết hợp đồng bộ công nghệ Internet of Things (IoT), vi điều khiển Arduino và ứng dụng di động Flutter trực quan.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="badge">IoT</span>
+              <span class="badge">Arduino</span>
+              <span class="badge">Flutter</span>
+            </div>
+          </div>
+
+          <!-- Project 02: Music Online Website -->
+          <div class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-index">PROJECT 02</span>
+                <span class="project-period">06/2022 – 08/2022</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj_2_title">Music Online Website</h3>
+              <div class="project-meta-row">
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span data-i18n="proj_role_fe">Vai trò: Frontend Developer</span>
+                </span>
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <span data-i18n="proj_team_6">Nhóm: 6 thành viên</span>
+                </span>
+              </div>
+              <p class="project-desc" data-i18n="proj_2_desc">
+                Website nghe nhạc trực tuyến cho phép người dùng tìm kiếm, phát nhạc và khám phá các bài hát theo sở thích cá nhân; xây dựng giao diện hiện đại với ReactJS và quản lý luồng dữ liệu bài hát với Redux.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="badge">ReactJS</span>
+              <span class="badge">Redux</span>
+              <span class="badge">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Project 03: Tic Tac Toe Mobile Game -->
+          <div class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-index">PROJECT 03</span>
+                <span class="project-period">06/2022 – 07/2022</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj_3_title">Tic Tac Toe Game</h3>
+              <div class="project-meta-row">
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span data-i18n="proj_role_mobile">Vai trò: Mobile Developer</span>
+                </span>
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span data-i18n="proj_team_1">Cá nhân (1 thành viên)</span>
+                </span>
+              </div>
+              <p class="project-desc" data-i18n="proj_3_desc">
+                Ứng dụng trò chơi cờ ca-rô (Tic Tac Toe) trên nền tảng di động với trải nghiệm mượt mà; tích hợp Firebase Realtime Database để lưu trữ trạng thái bàn cờ và đồng bộ dữ liệu người chơi theo thời gian thực.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="badge">Flutter</span>
+              <span class="badge">Firebase Realtime DB</span>
+              <span class="badge">Dart</span>
+            </div>
+          </div>
+
+          <!-- Project 04: Clothing Shop Application -->
+          <div class="project-card reveal">
+            <div>
+              <div class="project-top">
+                <span class="project-index">PROJECT 04</span>
+                <span class="project-period">2021 – 2022</span>
+              </div>
+              <h3 class="project-title" data-i18n="proj_4_title">Clothing Shop Application</h3>
+              <div class="project-meta-row">
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span data-i18n="proj_role_mobile">Vai trò: Mobile Developer</span>
+                </span>
+                <span class="project-meta-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <span data-i18n="proj_team_2">Nhóm: 2 thành viên</span>
+                </span>
+              </div>
+              <p class="project-desc" data-i18n="proj_4_desc">
+                Ứng dụng thương mại điện tử mua sắm thời trang trên thiết bị di động, hỗ trợ người dùng xem danh mục, lọc và lựa chọn sản phẩm thuận tiện; kết nối API hệ thống qua Retrofit và backend Node.js.
+              </p>
+            </div>
+            <div class="project-tech">
+              <span class="badge">Flutter</span>
+              <span class="badge">Retrofit</span>
+              <span class="badge">Node.js</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 07: FEATURED AI RESEARCH SPOTLIGHT (MASTER'S THESIS)
+       ========================================================================== -->
+    <section class="section-spacing research-section" id="research">
+      <div class="container">
+        
+        <div class="research-spotlight-card reveal">
+          <div class="research-grid">
+            
+            <!-- Left Info Column -->
+            <div>
+              <div class="research-label-group">
+                <span class="badge badge-gold" data-i18n="research_badge_type">Master's Thesis / Academic Research</span>
+                <span class="exp-period" data-i18n="research_badge_year">2026</span>
+              </div>
+
+              <h2 class="research-headline" data-i18n="research_heading">Exploring the Intersection of AI & Education</h2>
+              
+              <div style="margin-bottom: 20px;">
+                <h3 class="thesis-featured-title">"PHÁT TRIỂN CHATBOT HỖ TRỢ TƯ VẤN TUYỂN SINH DỰA TRÊN MÔ HÌNH NGÔN NGỮ LỚN"</h3>
+                <p class="thesis-featured-sub">"Development of an Admission Counseling Chatbot Based on Large Language Models"</p>
+              </div>
+
+              <p class="research-text" data-i18n="research_desc">
+                Đề tài tập trung nghiên cứu ứng dụng Trí tuệ nhân tạo và Mô hình ngôn ngữ lớn (LLM) trong lĩnh vực công nghệ giáo dục (Educational Technology). Mục tiêu là giải quyết bài toán tư vấn tuyển sinh đại học thông qua giao tiếp hội thoại tự nhiên, hỗ trợ cung cấp thông tin ngành học, chính sách và định hướng nghề nghiệp cho học sinh, sinh viên một cách trực quan, chính xác và kịp thời.
+              </p>
+
+              <div class="exp-tech-tags" style="margin-bottom: 24px;">
+                <span class="badge badge-gold">Large Language Models (LLMs)</span>
+                <span class="badge">Conversational AI</span>
+                <span class="badge">Admission Counseling</span>
+                <span class="badge">AI in Education</span>
+                <span class="badge">Intelligent Chatbot</span>
+              </div>
+
+              <div>
+                <a href="#contact" class="btn btn-gold btn-sm">
+                  <span data-i18n="btn_discuss_research">Trao đổi về đề tài nghiên cứu</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Visual: Abstract AI Dialogue & Neural Knowledge Network SVG -->
+            <div class="research-visual-panel">
+              <svg class="network-svg" viewBox="0 0 340 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Background Connection Geometry -->
+                <circle cx="170" cy="170" r="130" stroke="rgba(96, 165, 250, 0.15)" stroke-width="1" stroke-dasharray="3 3"/>
+                <circle cx="170" cy="170" r="80" stroke="rgba(212, 180, 131, 0.2)" stroke-width="1"/>
+
+                <!-- Network Edges -->
+                <line class="svg-line" x1="170" y1="170" x2="90" y2="80" stroke="#60A5FA" stroke-width="1.5" stroke-opacity="0.6"/>
+                <line class="svg-line" x1="170" y1="170" x2="250" y2="90" stroke="#D4B483" stroke-width="1.5" stroke-opacity="0.6"/>
+                <line class="svg-line" x1="170" y1="170" x2="260" y2="240" stroke="#22D3EE" stroke-width="1.5" stroke-opacity="0.6"/>
+                <line class="svg-line" x1="170" y1="170" x2="80" y2="240" stroke="#60A5FA" stroke-width="1.5" stroke-opacity="0.6"/>
+                <line class="svg-line" x1="90" y1="80" x2="250" y2="90" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line class="svg-line" x1="250" y1="90" x2="260" y2="240" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line class="svg-line" x1="260" y1="240" x2="80" y2="240" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+                <line class="svg-line" x1="80" y1="240" x2="90" y2="80" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+                <!-- Central Hub: LLM Core -->
+                <circle class="svg-node" cx="170" cy="170" r="26" fill="#172033" stroke="#D4B483" stroke-width="2.5"/>
+                <text x="170" y="174" fill="#D4B483" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle">LLM</text>
+
+                <!-- Peripheral Node 1: User / Admission Query -->
+                <circle class="svg-node" cx="90" cy="80" r="18" fill="#111827" stroke="#60A5FA" stroke-width="2"/>
+                <text x="90" y="84" fill="#93C5FD" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">Query</text>
+
+                <!-- Peripheral Node 2: Admission Knowledge -->
+                <circle class="svg-node" cx="250" cy="90" r="20" fill="#111827" stroke="#D4B483" stroke-width="2"/>
+                <text x="250" y="94" fill="#E5D0B1" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">Edu DB</text>
+
+                <!-- Peripheral Node 3: Conversational Response -->
+                <circle class="svg-node" cx="260" cy="240" r="22" fill="#111827" stroke="#22D3EE" stroke-width="2"/>
+                <text x="260" y="244" fill="#67E8F9" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">Counsel</text>
+
+                <!-- Peripheral Node 4: Dialogue Context -->
+                <circle class="svg-node" cx="80" cy="240" r="18" fill="#111827" stroke="#60A5FA" stroke-width="2"/>
+                <text x="80" y="244" fill="#93C5FD" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">Context</text>
+              </svg>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 08: CERTIFICATIONS & ACTIVITIES
+       ========================================================================== -->
+    <section class="section-spacing" id="certifications">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="eyebrow" data-i18n="cert_eyebrow">Mở rộng quốc tế & Sở thích</span>
+          <h2 class="section-title" data-i18n="cert_title">Chứng Nhận & Hoạt Động</h2>
+          <p class="section-subtitle" data-i18n="cert_subtitle">Trải nghiệm học tập dự án quốc tế và các hoạt động cân bằng cuộc sống.</p>
+        </div>
+
+        <div class="cert-grid">
+          
+          <!-- Certification Card: Global PBL -->
+          <div class="cert-card reveal">
+            <div>
+              <div class="cert-icon-wrapper">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M2 12h20"></path>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-gold" style="margin-bottom: 12px;" data-i18n="cert_tag">International Program</span>
+              <h3 class="cert-title">Global Project-Based Learning Program (gPBL)</h3>
+              <p class="cert-issuer">Shibaura Institute of Technology, Japan</p>
+              <p class="cert-desc" data-i18n="cert_desc">
+                Hoàn thành chương trình học tập theo dự án quốc tế (hình thức Online) do Viện Công nghệ Shibaura (Nhật Bản) tổ chức; giao lưu học thuật và phối hợp giải quyết bài toán kỹ thuật cùng sinh viên quốc tế.
+              </p>
+            </div>
+          </div>
+
+          <!-- Personal Interests & Balance Card -->
+          <div class="cert-card reveal">
+            <div>
+              <div class="cert-icon-wrapper" style="background-color: var(--gold-badge-bg); color: var(--accent-gold);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </div>
+              <span class="badge" style="margin-bottom: 12px;" data-i18n="interest_tag">Personal Interests</span>
+              <h3 class="cert-title" data-i18n="interest_title">Sở Thích & Đam Mê</h3>
+              <p class="cert-desc" data-i18n="interest_desc">
+                Duy trì lối sống năng động, tinh thần học hỏi liên tục và nguồn cảm hứng sáng tạo thông qua thể thao, nghệ thuật và khám phá công nghệ mới.
+              </p>
+
+              <div class="interests-list">
+                <div class="interest-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m4.93 19.07 4.24-4.24"></path></svg>
+                  <span data-i18n="interest_football">Bóng đá</span>
+                </div>
+                <div class="interest-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                  <span data-i18n="interest_reading">Đọc sách</span>
+                </div>
+                <div class="interest-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                  <span data-i18n="interest_music">Âm nhạc</span>
+                </div>
+                <div class="interest-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="2" x2="12" y2="6"></line><line x1="12" y1="18" x2="12" y2="22"></line><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"></line><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"></line></svg>
+                  <span data-i18n="interest_tech">Khám phá công nghệ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       SECTION 09: CONTACT & COLLABORATION
+       ========================================================================== -->
+    <section class="section-spacing" id="contact" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color);">
+      <div class="container">
+        
+        <div class="contact-card reveal">
+          <div class="contact-grid">
+            
+            <!-- Left Info -->
+            <div>
+              <span class="eyebrow" data-i18n="contact_eyebrow">Kết nối & Hợp tác</span>
+              <h2 class="contact-heading" data-i18n="contact_heading">Let's Connect & Collaborate</h2>
+              <p class="contact-intro" data-i18n="contact_intro">
+                Luôn sẵn sàng đón nhận các cơ hội trao đổi học thuật, hợp tác nghiên cứu ứng dụng Trí tuệ nhân tạo (AI/LLM) trong giáo dục, các dự án kỹ thuật phần mềm hoặc lời mời giảng dạy, chia sẻ chuyên môn.
+              </p>
+
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <a href="mailto:ngoctinhxx@gmail.com" class="btn btn-primary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span data-i18n="btn_send_email">Gửi Email trực tiếp</span>
+                </a>
+                <button onclick="handlePrintCV()" class="btn btn-secondary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                  <span data-i18n="btn_download_cv_full">In hồ sơ / Lưu PDF</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Contact Methods List -->
+            <div class="contact-methods">
+              
+              <!-- Email with Copy Button -->
+              <div class="contact-item">
+                <div class="contact-left">
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:ngoctinhxx@gmail.com" class="contact-value">ngoctinhxx@gmail.com</a>
+                  </div>
+                </div>
+                <button onclick="copyToClipboard('ngoctinhxx@gmail.com')" class="copy-btn" title="Sao chép email">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span data-i18n="btn_copy">Sao chép</span>
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-item">
+                <div class="contact-left">
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label" data-i18n="contact_phone_label">Điện thoại</div>
+                    <a href="tel:0326693102" class="contact-value">0326693102</a>
+                  </div>
+                </div>
+                <button onclick="copyToClipboard('0326693102')" class="copy-btn" title="Sao chép số điện thoại">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span data-i18n="btn_copy">Sao chép</span>
+                </button>
+              </div>
+
+              <!-- Facebook -->
+              <div class="contact-item">
+                <div class="contact-left">
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">Facebook Profile</div>
+                    <a href="https://facebook.com/1004tinh" target="_blank" rel="noopener noreferrer" class="contact-value">facebook.com/1004tinh</a>
+                  </div>
+                </div>
+                <a href="https://facebook.com/1004tinh" target="_blank" rel="noopener noreferrer" class="copy-btn" style="text-decoration: none;">
+                  <span data-i18n="btn_visit">Truy cập</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-item">
+                <div class="contact-left">
+                  <div class="contact-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label" data-i18n="contact_loc_label">Địa điểm</div>
+                    <span class="contact-value" data-i18n="contact_loc_val">Đà Nẵng, Việt Nam</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <div class="footer-copy">
+            © 2026 Phạm Ngọc Tính. All rights reserved. • Academic & Professional Portfolio
+          </div>
+          <a href="#hero" class="back-to-top">
+            <span data-i18n="btn_back_to_top">Lên đầu trang</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </a>
+        </footer>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-notification">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span id="toast-message">Đã sao chép vào bộ nhớ tạm!</span>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT: THEME, BILINGUAL DICTIONARY, NAVIGATION & INTERACTION
+       ========================================================================== -->
+  <script>
+    /* --------------------------------------------------------------------------
+       1. BILINGUAL DICTIONARY (VI / EN)
+       -------------------------------------------------------------------------- */
+    const translations = {
+      vi: {
+        nav_sub: "IT Lecturer & Researcher",
+        nav_home: "Trang chủ",
+        nav_about: "Về tôi",
+        nav_experience: "Kinh nghiệm",
+        nav_education: "Học vấn",
+        nav_skills: "Kỹ năng",
+        nav_projects: "Dự án",
+        nav_research: "Nghiên cứu",
+        nav_contact: "Liên hệ",
+        btn_download_cv: "Tải CV / In PDF",
+        btn_download_cv_hero: "Tải CV (PDF)",
+        btn_download_cv_full: "In hồ sơ / Lưu PDF",
+        btn_explore_profile: "Khám phá hồ sơ",
+        btn_view_research: "Xem đề tài nghiên cứu",
+        hero_eyebrow: "Lecturer • Developer • AI Research",
+        hero_title: "IT Lecturer | Software Developer | AI & LLM Researcher",
+        hero_tagline: "\"Connecting Education, Software Engineering & Artificial Intelligence.\"",
+        hero_bio_short: "Giảng viên Khoa Công nghệ thông tin tại Trường Đại học Đông Á. Kết hợp nền tảng kỹ thuật phần mềm vững chắc, kinh nghiệm phát triển ứng dụng di động & web, cùng định hướng nghiên cứu ứng dụng Mô hình ngôn ngữ lớn (LLM) và Chatbot thông minh vào giáo dục đại học.",
+        hero_label_role: "Vị trí hiện tại",
+        hero_val_role: "Giảng viên CNTT (10/2023 – Nay)",
+        hero_label_academic: "Trình độ học vấn",
+        hero_val_academic: "Thạc sĩ (Hoàn thành 2026)",
+        hero_label_location: "Địa điểm công tác",
+        hero_val_location: "Đà Nẵng, Việt Nam",
+        badge_academic_top: "Faculty of IT",
+        badge_academic_bottom: "Đại học Đông Á",
+        badge_ai_top: "Research Focus",
+        badge_ai_bottom: "LLM & Education AI",
+        
+        about_eyebrow: "Giới thiệu tổng quan",
+        about_title: "Hồ Sơ Chuyên Môn",
+        about_subtitle: "Sự hội tụ giữa chuẩn mực đào tạo học thuật, năng lực lập trình ứng dụng thực tiễn và tư duy nghiên cứu công nghệ mới.",
+        about_para_1: "<strong>Phạm Ngọc Tính</strong> hiện đang công tác với vai trò là <strong>Giảng viên Khoa Công nghệ thông tin</strong> tại <strong>Trường Đại học Đông Á</strong> (từ tháng 10/2023 đến nay). Trên giảng đường, thầy tập trung truyền cảm hứng học tập và trang bị nền tảng công nghệ phần mềm thực tế, phương pháp tư duy lập trình vững chắc cho sinh viên.",
+        about_para_2: "Xuất phát từ nền tảng đào tạo chuyên ngành <strong>Công nghệ phần mềm</strong> cùng kinh nghiệm thực tế trong phát triển ứng dụng di động (Flutter), giao diện web hiện đại (ReactJS) và quản trị cơ sở dữ liệu, thầy luôn chú trọng tính ứng dụng và chất lượng kiến trúc phần mềm trong giảng dạy.",
+        about_para_3: "Thầy hoàn thành chương trình đào tạo Thạc sĩ năm 2026 với đề tài nghiên cứu trọng điểm: <em>\"PHÁT TRIỂN CHATBOT HỖ TRỢ TƯ VẤN TUYỂN SINH DỰA TRÊN MÔ HÌNH NGÔN NGỮ LỚN\"</em>. Hướng nghiên cứu hiện tại tập trung sâu vào ứng dụng Trí tuệ nhân tạo (AI), Mô hình ngôn ngữ lớn (LLM), Chatbot hội thoại thông minh và các giải pháp chuyển đổi số nâng cao trải nghiệm trong môi trường giáo dục đại học.",
+        
+        pillar_1_title: "Đào Tạo & Giảng Dạy",
+        pillar_1_desc: "Giảng dạy tại Khoa Công nghệ thông tin Đại học Đông Á. Định hướng sinh viên tiếp cận chuẩn kỹ nghệ phần mềm, rèn luyện tư duy giải quyết vấn đề và thích ứng với làn sóng công nghệ mới.",
+        pillar_2_title: "Phát Triển Phần Mềm",
+        pillar_2_desc: "Kinh nghiệm thực hành lập trình ứng dụng di động đa nền tảng với Flutter/Dart, thiết kế giao diện web với ReactJS, tối ưu luồng trạng thái (BLoC, Redux) và tích hợp hệ thống cơ sở dữ liệu.",
+        pillar_3_title: "Nghiên Cứu AI & LLM",
+        pillar_3_desc: "Tập trung khai thác sức mạnh của Mô hình ngôn ngữ lớn (LLM), Conversational AI trong việc xây dựng hệ thống trợ lý ảo hỗ trợ tư vấn tuyển sinh và đổi mới phương thức tương tác giáo dục.",
+
+        exp_eyebrow: "Hành trình nghề nghiệp",
+        exp_title: "Kinh Nghiệm Chuyên Môn",
+        exp_subtitle: "Lộ trình tích lũy từ môi trường doanh nghiệp phần mềm đến vai trò Giảng viên đại học và nghiên cứu công nghệ.",
+        exp_role_1: "Giảng viên Công nghệ thông tin",
+        exp_comp_1: "Trường Đại học Đông Á — Khoa Công nghệ thông tin",
+        exp_time_1: "10/2023 – Hiện tại",
+        exp_desc_1: "Đảm nhiệm công tác đào tạo và giảng dạy trong lĩnh vực Công nghệ thông tin; ứng dụng nền tảng chuyên môn sâu về công nghệ phần mềm và quy trình phát triển ứng dụng vào bài giảng. Luôn quan tâm tìm tòi, thúc đẩy các phương pháp ứng dụng công nghệ hiện đại, trí tuệ nhân tạo (AI) và các mô hình ngôn ngữ lớn (LLM) vào môi trường học thuật.",
+        exp_tag_1a: "Giảng dạy CNTT",
+        exp_tag_1b: "Công nghệ phần mềm",
+        exp_tag_1c: "Ứng dụng AI trong Giáo dục",
+        exp_tag_1d: "Large Language Models",
+        exp_role_2: "Mobile Developer Intern",
+        exp_desc_2: "Tham gia thực tập trong lĩnh vực phát triển ứng dụng di động; tiếp cận quy trình phát triển phần mềm chuyên nghiệp với Flutter, tối ưu hóa giao diện người dùng và quản lý luồng trạng thái phức tạp với BLoC pattern.",
+        exp_role_3: "Frontend Developer Intern",
+        exp_desc_3: "Thực tập chuyên môn trong mảng phát triển giao diện web; làm việc cùng công nghệ ReactJS, JavaScript hiện đại, xây dựng các thành phần giao diện người dùng có tính tương tác cao và chuẩn hóa CSS/HTML.",
+
+        edu_eyebrow: "Hành trình học thuật",
+        edu_title: "Học Vấn & Luận Văn Thạc Sĩ",
+        edu_subtitle: "Nền tảng đào tạo chính quy, từ xuất sắc Đại học Công nghệ phần mềm đến định hướng nghiên cứu chuyên sâu về AI.",
+        edu_master_level: "Trình độ Thạc sĩ",
+        edu_master_year: "Hoàn thành năm 2026",
+        edu_master_degree: "Chương Trình Thạc Sĩ",
+        edu_master_sub: "Đào tạo sau đại học & Nghiên cứu ứng dụng",
+        thesis_badge: "Luận văn Thạc sĩ",
+        edu_bachelor_level: "Trình độ Đại học",
+        edu_bachelor_degree: "Kỹ Sư Công Nghệ Phần Mềm",
+        edu_bachelor_desc: "Tốt nghiệp chuyên ngành Công nghệ phần mềm với kết quả học tập xuất sắc. Được trang bị nền tảng kiến trúc phần mềm, cấu trúc dữ liệu và giải thuật, công nghệ cơ sở dữ liệu và quy trình kiểm thử phần mềm.",
+        gpa_label: "Điểm Trung Bình Tốt Nghiệp",
+        gpa_sub: "Academic Achievement",
+
+        skills_eyebrow: "Năng lực cốt lõi",
+        skills_title: "Kỹ Năng & Hướng Chuyên Môn",
+        skills_subtitle: "Hệ thống công nghệ phần mềm thực hành và các chủ đề nghiên cứu trọng tâm.",
+        skill_group_languages: "Ngôn Ngữ Lập Trình",
+        skill_group_frameworks: "Framework & Nền Tảng",
+        skill_group_databases: "Cơ Sở Dữ Liệu",
+        skill_group_vcs: "Quản Lý Mã Nguồn",
+        skill_group_ai: "Định Hướng Nghiên Cứu AI",
+        skill_ai_note: "* Đây là các lĩnh vực trọng tâm và đề tài nghiên cứu học thuật đang được theo đuổi.",
+        skill_group_comm_lang: "Ngoại Ngữ",
+        lang_vietnamese: "Tiếng Việt",
+        lang_native: "Bản ngữ (Native)",
+        lang_english: "Tiếng Anh",
+
+        projects_eyebrow: "Dự án kỹ thuật",
+        projects_title: "Dự Án Phát Triển Phần Mềm",
+        projects_subtitle: "Các sản phẩm phần mềm thực tế kết hợp giải pháp IoT, Mobile và Web Applications.",
+        proj_role_mobile: "Vai trò: Mobile Developer",
+        proj_role_fe: "Vai trò: Frontend Developer",
+        proj_team_4: "Nhóm: 4 thành viên",
+        proj_team_6: "Nhóm: 6 thành viên",
+        proj_team_2: "Nhóm: 2 thành viên",
+        proj_team_1: "Cá nhân (1 thành viên)",
+        proj_1_title: "Smart Home",
+        proj_1_desc: "Ứng dụng hỗ trợ người dùng điều khiển và giám sát các thiết bị trong gia đình thông minh từ xa, kết hợp đồng bộ công nghệ Internet of Things (IoT), vi điều khiển Arduino và ứng dụng di động Flutter trực quan.",
+        proj_2_title: "Music Online Website",
+        proj_2_desc: "Website nghe nhạc trực tuyến cho phép người dùng tìm kiếm, phát nhạc và khám phá các bài hát theo sở thích cá nhân; xây dựng giao diện hiện đại với ReactJS và quản lý luồng dữ liệu bài hát với Redux.",
+        proj_3_title: "Tic Tac Toe Game",
+        proj_3_desc: "Ứng dụng trò chơi cờ ca-rô (Tic Tac Toe) trên nền tảng di động với trải nghiệm mượt mà; tích hợp Firebase Realtime Database để lưu trữ trạng thái bàn cờ và đồng bộ dữ liệu người chơi theo thời gian thực.",
+        proj_4_title: "Clothing Shop Application",
+        proj_4_desc: "Ứng dụng thương mại điện tử mua sắm thời trang trên thiết bị di động, hỗ trợ người dùng xem danh mục, lọc và lựa chọn sản phẩm thuận tiện; kết nối API hệ thống qua Retrofit và backend Node.js.",
+
+        research_badge_type: "Master's Thesis / Academic Research",
+        research_badge_year: "2026",
+        research_heading: "Exploring the Intersection of AI & Education",
+        research_desc: "Đề tài tập trung nghiên cứu ứng dụng Trí tuệ nhân tạo và Mô hình ngôn ngữ lớn (LLM) trong lĩnh vực công nghệ giáo dục (Educational Technology). Mục tiêu là giải quyết bài toán tư vấn tuyển sinh đại học thông qua giao tiếp hội thoại tự nhiên, hỗ trợ cung cấp thông tin ngành học, chính sách và định hướng nghề nghiệp cho học sinh, sinh viên một cách trực quan, chính xác và kịp thời.",
+        btn_discuss_research: "Trao đổi về đề tài nghiên cứu",
+
+        cert_eyebrow: "Mở rộng quốc tế & Sở thích",
+        cert_title: "Chứng Nhận & Hoạt Động",
+        cert_subtitle: "Trải nghiệm học tập dự án quốc tế và các hoạt động cân bằng cuộc sống.",
+        cert_tag: "International Program",
+        cert_desc: "Hoàn thành chương trình học tập theo dự án quốc tế (hình thức Online) do Viện Công nghệ Shibaura (Nhật Bản) tổ chức; giao lưu học thuật và phối hợp giải quyết bài toán kỹ thuật cùng sinh viên quốc tế.",
+        interest_tag: "Personal Interests",
+        interest_title: "Sở Thích & Đam Mê",
+        interest_desc: "Duy trì lối sống năng động, tinh thần học hỏi liên tục và nguồn cảm hứng sáng tạo thông qua thể thao, nghệ thuật và khám phá công nghệ mới.",
+        interest_football: "Bóng đá",
+        interest_reading: "Đọc sách",
+        interest_music: "Âm nhạc",
+        interest_tech: "Khám phá công nghệ",
+
+        contact_eyebrow: "Kết nối & Hợp tác",
+        contact_heading: "Let's Connect & Collaborate",
+        contact_intro: "Luôn sẵn sàng đón nhận các cơ hội trao đổi học thuật, hợp tác nghiên cứu ứng dụng Trí tuệ nhân tạo (AI/LLM) trong giáo dục, các dự án kỹ thuật phần mềm hoặc lời mời giảng dạy, chia sẻ chuyên môn.",
+        btn_send_email: "Gửi Email trực tiếp",
+        btn_copy: "Sao chép",
+        btn_visit: "Truy cập",
+        contact_phone_label: "Điện thoại",
+        contact_loc_label: "Địa điểm",
+        contact_loc_val: "Đà Nẵng, Việt Nam",
+        btn_back_to_top: "Lên đầu trang",
+        toast_copied: "Đã sao chép vào bộ nhớ tạm!"
+      },
+      en: {
+        nav_sub: "IT Lecturer & Researcher",
+        nav_home: "Home",
+        nav_about: "About",
+        nav_experience: "Experience",
+        nav_education: "Education",
+        nav_skills: "Skills",
+        nav_projects: "Projects",
+        nav_research: "Research",
+        nav_contact: "Contact",
+        btn_download_cv: "Download CV / Print",
+        btn_download_cv_hero: "Download CV (PDF)",
+        btn_download_cv_full: "Print CV / Save PDF",
+        btn_explore_profile: "Explore Profile",
+        btn_view_research: "View Research",
+        hero_eyebrow: "Lecturer • Developer • AI Research",
+        hero_title: "IT Lecturer | Software Developer | AI & LLM Researcher",
+        hero_tagline: "\"Connecting Education, Software Engineering & Artificial Intelligence.\"",
+        hero_bio_short: "IT Lecturer at the Faculty of Information Technology, Dong A University. Combining rigorous software engineering expertise, mobile & web application experience, and research dedication to Large Language Models (LLMs) and conversational AI in higher education.",
+        hero_label_role: "Current Position",
+        hero_val_role: "IT Lecturer (10/2023 – Present)",
+        hero_label_academic: "Academic Degree",
+        hero_val_academic: "Master's Degree (Completed 2026)",
+        hero_label_location: "Location",
+        hero_val_location: "Da Nang, Vietnam",
+        badge_academic_top: "Faculty of IT",
+        badge_academic_bottom: "Dong A University",
+        badge_ai_top: "Research Focus",
+        badge_ai_bottom: "LLM & Education AI",
+        
+        about_eyebrow: "Professional Overview",
+        about_title: "Academic & Engineering Profile",
+        about_subtitle: "Bridging pedagogical excellence, practical software engineering foundations, and cutting-edge AI research.",
+        about_para_1: "<strong>Pham Ngoc Tinh</strong> currently serves as an <strong>IT Lecturer at the Faculty of Information Technology</strong>, <strong>Dong A University</strong> (October 2023 – Present). In academia, he is dedicated to delivering industry-standard software engineering curricula, inspiring algorithmic problem-solving, and mentoring the next generation of engineers.",
+        about_para_2: "Rooted in a formal background in <strong>Software Engineering</strong> alongside hands-on enterprise internship experience in cross-platform mobile development (Flutter), modern web interfaces (ReactJS), and database management, he emphasizes practical code architecture and system robustness in every educational endeavor.",
+        about_para_3: "He completed his Master's program in 2026 with the focal thesis: <em>\"PHÁT TRIỂN CHATBOT HỖ TRỢ TƯ VẤN TUYỂN SINH DỰA TRÊN MÔ HÌNH NGÔN NGỮ LỚN\"</em> (English: <em>\"Development of an Admission Counseling Chatbot Based on Large Language Models\"</em>). His ongoing research focuses on applied Artificial Intelligence, Conversational Agents, and Educational Technology to elevate digital admission and advising workflows.",
+        
+        pillar_1_title: "Teaching & Education",
+        pillar_1_desc: "Lecturing at the Faculty of Information Technology, Dong A University. Equipping students with software engineering standards, problem-solving mindsets, and adaptability to emerging tech.",
+        pillar_2_title: "Software Development",
+        pillar_2_desc: "Hands-on engineering expertise in cross-platform mobile apps with Flutter/Dart, modern web UI development with ReactJS, state management (BLoC, Redux), and database integrations.",
+        pillar_3_title: "AI & LLM Research",
+        pillar_3_desc: "Investigating Large Language Models (LLMs) and Conversational AI to architect intelligent admission assistants and enhance interactive educational technology.",
+
+        exp_eyebrow: "Career Journey",
+        exp_title: "Professional Experience",
+        exp_subtitle: "Progressive career trajectory spanning software enterprise internships, university lecturing, and technological research.",
+        exp_role_1: "IT Lecturer",
+        exp_comp_1: "Dong A University — Faculty of Information Technology",
+        exp_time_1: "10/2023 – Present",
+        exp_desc_1: "Delivering core IT and software engineering training; integrating modern app development methodologies and architectural best practices into higher education courses. Actively exploring and promoting the pedagogical integration of AI, modern technologies, and Large Language Models into academic learning environments.",
+        exp_tag_1a: "IT Higher Education",
+        exp_tag_1b: "Software Engineering",
+        exp_tag_1c: "AI in Education",
+        exp_tag_1d: "Large Language Models",
+        exp_role_2: "Mobile Developer Intern",
+        exp_desc_2: "Interned in cross-platform mobile development; practiced professional software engineering workflows with Flutter, UI optimization, and reactive state management using the BLoC pattern.",
+        exp_role_3: "Frontend Developer Intern",
+        exp_desc_3: "Interned in modern web UI development; leveraged ReactJS and modern JavaScript to build responsive, interactive web interfaces and maintain standardized HTML5/CSS3 components.",
+
+        edu_eyebrow: "Academic Milestones",
+        edu_title: "Academic Background & Master's Thesis",
+        edu_subtitle: "Rigorous academic pathway, from graduating with software engineering distinction to conducting applied AI research.",
+        edu_master_level: "Master's Level",
+        edu_master_year: "Completed 2026",
+        edu_master_degree: "Master's Degree Program",
+        edu_master_sub: "Postgraduate Studies & Applied Research",
+        thesis_badge: "Master's Thesis",
+        edu_bachelor_level: "Bachelor's Level",
+        edu_bachelor_degree: "Bachelor of Software Engineering",
+        edu_bachelor_desc: "Graduated with High Academic Distinction in Software Engineering. Extensively trained in software architecture, data structures & algorithms, database systems, and software quality assurance.",
+        gpa_label: "Cumulative Graduation GPA",
+        gpa_sub: "Academic Achievement",
+
+        skills_eyebrow: "Core Competencies",
+        skills_title: "Technical Expertise & Research Topics",
+        skills_subtitle: "Practical software engineering stacks and primary research areas.",
+        skill_group_languages: "Programming Languages",
+        skill_group_frameworks: "Frameworks & Platforms",
+        skill_group_databases: "Databases",
+        skill_group_vcs: "Version Control & Tooling",
+        skill_group_ai: "AI & Research Interests",
+        skill_ai_note: "* These reflect core academic research directions and focal scholarly interests.",
+        skill_group_comm_lang: "Languages",
+        lang_vietnamese: "Vietnamese",
+        lang_native: "Native",
+        lang_english: "English",
+
+        projects_eyebrow: "Featured Projects",
+        projects_title: "Selected Technical Works",
+        projects_subtitle: "Real-world software products integrating IoT, mobile engineering, and modern web architectures.",
+        proj_role_mobile: "Role: Mobile Developer",
+        proj_role_fe: "Role: Frontend Developer",
+        proj_team_4: "Team: 4 members",
+        proj_team_6: "Team: 6 members",
+        proj_team_2: "Team: 2 members",
+        proj_team_1: "Solo (1 member)",
+        proj_1_title: "Smart Home",
+        proj_1_desc: "An application enabling users to remotely monitor and control smart household appliances, seamlessly integrating Internet of Things (IoT) hardware, Arduino microcontrollers, and a Flutter mobile app.",
+        proj_2_title: "Music Online Website",
+        proj_2_desc: "A music streaming web application allowing users to search, stream, and discover favorite audio tracks, built with responsive ReactJS UI components and Redux state management.",
+        proj_3_title: "Tic Tac Toe Game",
+        proj_3_desc: "A mobile turn-based Tic Tac Toe game with smooth user interactions, featuring Firebase Realtime Database for live match state storage and instantaneous multi-device player synchronization.",
+        proj_4_title: "Clothing Shop Application",
+        proj_4_desc: "An e-commerce mobile shopping application facilitating intuitive product catalog browsing, filtering, and order handling, communicating via Retrofit HTTP client with a Node.js backend.",
+
+        research_badge_type: "Master's Thesis / Academic Research",
+        research_badge_year: "2026",
+        research_heading: "Exploring the Intersection of AI & Education",
+        research_desc: "This research investigates the integration of Artificial Intelligence and Large Language Models (LLMs) in Educational Technology. The primary focus is solving university admission counseling inquiries through natural language dialogue, delivering personalized, timely guidance regarding academic majors, policies, and career paths.",
+        btn_discuss_research: "Discuss Research Topics",
+
+        cert_eyebrow: "Global Exposure & Interests",
+        cert_title: "Certifications & Activities",
+        cert_subtitle: "International collaborative project exposure and personal creative balance.",
+        cert_tag: "International Program",
+        cert_desc: "Successfully completed the online Global Project-Based Learning Program (gPBL) hosted by the Shibaura Institute of Technology, Japan; collaborating internationally to analyze and solve technical challenges.",
+        interest_tag: "Personal Interests",
+        interest_title: "Interests & Pursuits",
+        interest_desc: "Cultivating an active lifestyle, continuous curiosity, and creative inspiration through sports, arts, and exploring state-of-the-art tech.",
+        interest_football: "Football",
+        interest_reading: "Reading",
+        interest_music: "Music",
+        interest_tech: "Exploring New Tech",
+
+        contact_eyebrow: "Let's Connect",
+        contact_heading: "Let's Connect & Collaborate",
+        contact_intro: "Open to scholarly exchanges, joint research in applied AI / LLMs for educational institutions, software engineering collaborations, and academic guest lectures.",
+        btn_send_email: "Send Direct Email",
+        btn_copy: "Copy",
+        btn_visit: "Visit",
+        contact_phone_label: "Phone Number",
+        contact_loc_label: "Location",
+        contact_loc_val: "Da Nang, Vietnam",
+        btn_back_to_top: "Back to Top",
+        toast_copied: "Copied to clipboard!"
+      }
+    };
+
+    /* --------------------------------------------------------------------------
+       2. STATE & LANGUAGE HANDLER
+       -------------------------------------------------------------------------- */
+    let currentLang = localStorage.getItem('pnt_lang') || 'vi';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('pnt_lang', lang);
+      document.documentElement.lang = lang;
+
+      const langToggleLabel = document.getElementById('lang-label');
+      if (langToggleLabel) {
+        langToggleLabel.textContent = lang === 'vi' ? 'EN' : 'VI';
+      }
+
+      // Update all elements with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = translations[lang][key];
+          } else {
+            el.innerHTML = translations[lang][key];
+          }
+        }
+      });
+    }
+
+    document.getElementById('lang-toggle-btn').addEventListener('click', () => {
+      setLanguage(currentLang === 'vi' ? 'en' : 'vi');
+    });
+
+    /* --------------------------------------------------------------------------
+       3. DARK / LIGHT THEME TOGGLE
+       -------------------------------------------------------------------------- */
+    const savedTheme = localStorage.getItem('pnt_theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    themeToggleBtn.addEventListener('click', () => {
+      const activeTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = activeTheme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('pnt_theme', newTheme);
+    });
+
+    /* --------------------------------------------------------------------------
+       4. SCROLL PROGRESS & ACTIVE SCROLLSPY
+       -------------------------------------------------------------------------- */
+    const scrollProgress = document.getElementById('scroll-progress');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+
+    window.addEventListener('scroll', () => {
+      // 4.1 Update Progress Bar
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = totalHeight > 0 ? (window.pageYOffset / totalHeight) * 100 : 0;
+      scrollProgress.style.width = progress + '%';
+
+      // 4.2 Scrollspy Highlight Active Section
+      let currentSectionId = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        const sectionHeight = section.offsetHeight;
+        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSectionId) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    /* --------------------------------------------------------------------------
+       5. MOBILE DRAWER NAVIGATION
+       -------------------------------------------------------------------------- */
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileDrawer = document.getElementById('mobile-drawer');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    function toggleMobileDrawer() {
+      mobileDrawer.classList.toggle('open');
+      const isOpen = mobileDrawer.classList.contains('open');
+      mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMobileDrawer);
+
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileDrawer.classList.remove('open');
+      });
+    });
+
+    /* --------------------------------------------------------------------------
+       6. INTERSECTION OBSERVER FOR FADE-IN ON SCROLL
+       -------------------------------------------------------------------------- */
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    /* --------------------------------------------------------------------------
+       7. UTILITY: COPY TO CLIPBOARD WITH TOAST
+       -------------------------------------------------------------------------- */
+    function copyToClipboard(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(() => showToast());
+      } else {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.opacity = "0";
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        try {
+          document.execCommand('copy');
+          showToast();
+        } catch (err) {
+          console.error('Copy failed:', err);
+        }
+        document.body.removeChild(textArea);
+      }
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toast-notification');
+      const toastMsg = document.getElementById('toast-message');
+      toastMsg.textContent = translations[currentLang]?.toast_copied || "Đã sao chép!";
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
+    /* --------------------------------------------------------------------------
+       8. PRINT CV / SAVE AS PDF FUNCTIONALITY
+       -------------------------------------------------------------------------- */
+    function handlePrintCV() {
+      window.print();
+    }
+
+    /* --------------------------------------------------------------------------
+       9. INITIALIZATION
+       -------------------------------------------------------------------------- */
+    document.addEventListener('DOMContentLoaded', () => {
+      setLanguage(currentLang);
+    });
+  </script>
+</body>
+</html>
